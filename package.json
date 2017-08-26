@@ -1,0 +1,20 @@
+{
+  "name": "atumori",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzimaru0000/atumori.git"
+  },
+  "keywords": [],
+  "author": "uzimaru0000",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uzimaru0000/atumori/issues"
+  },
+  "homepage": "https://github.com/uzimaru0000/atumori#readme"
+}
