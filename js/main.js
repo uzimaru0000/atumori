@@ -22,7 +22,7 @@ app.on('ready', () => {
         resizable: false,
         alwaysOnTop: true
     });
-    mainWindow.setIgnoreMouseEvents(true);
+    //mainWindow.setIgnoreMouseEvents(true);
     mainWindow.maximize();
     mainWindow.loadURL('file://' + __dirname + '/../index.html');
 
