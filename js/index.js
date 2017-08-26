@@ -19,8 +19,15 @@ class Atumori extends Sprite {
     constructor(pos, display) {
         super(325, 325, display.getTexture("image/atumori.png"));
         this.pos = pos.clone();
+        this.scale = new Vector(2, 2);
+        this.age = 0;
+        this.fadeTime = display.fps * 0.1;
         this.on("update", e => {
-            if (e > 120) this.parent.removeChild(this);
+            if (this.age < this.fadeTime) { 
+                this.scale.sub(new Vector(1 / this.fadeTime, 1 / this.fadeTime));
+            }
+            if (this.age > display.fps * 2) this.parent.removeChild(this);
+            this.age++;
         });
     }
 }
