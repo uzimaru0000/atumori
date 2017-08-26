@@ -11,8 +11,8 @@ window.onload = () => {
     APP.display.width = size.width;
     APP.display.height = size.height;
     APP.display.preload(["image/atumori.png"]);
-    const pos = () => new Vector(size.width - 325, size.height - 325);
-    APP.display.addChild(new Atumori(pos(), APP.display));
+    const pos = () => new Vector(size.width - 200, size.height - 200);
+    APP.display.on("Enter-down", e => APP.display.addChild(new Atumori(pos(), APP.display)));
 };
 
 class Atumori extends Sprite {
