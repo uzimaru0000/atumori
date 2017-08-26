@@ -22,6 +22,9 @@ class Atumori extends Sprite {
         this.scale = new Vector(2, 2);
         this.age = 0;
         this.fadeTime = display.fps * 0.1;
+        this.sound = new Audio('audio/atsumori.mp3');
+        this.sound.load();
+        this.sound.play();
         this.on("update", e => {
             if (this.age < this.fadeTime) { 
                 this.scale.sub(new Vector(1 / this.fadeTime, 1 / this.fadeTime));
