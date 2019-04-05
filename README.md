@@ -1,1 +1,7 @@
 # atumori
+
+# run
+
+```
+$ electron .
+```
